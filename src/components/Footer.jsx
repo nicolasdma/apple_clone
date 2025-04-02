@@ -8,12 +8,12 @@ const Footer = () => {
         <div>
           <p className="font-semibold text-gray text-xs">
             More ways to shop:{" "}
-            <span className="underline text-blue">Find an Apple Store</span> or{" "}
-            <span className="underline text-blue">other retailer</span> near
-            you.
+            <span className="underline text-blue">Find an AiFone Store</span> or{" "}
+            <span className="underline text-blue">some random retailer</span>{" "}
+            near you.
           </p>
           <p className="font-semibold text-gray text-xs">
-            Or call 000800-040-1966
+            Or call 000800-040-1966 (not us, but someone will probably pick up).
           </p>
         </div>
 
@@ -21,14 +21,15 @@ const Footer = () => {
 
         <div className="flex md:flow-row flex-col md:items-center justify-between">
           <p className="font-semibold text-gray text-xs">
-            Copyright @ 2025 Apple Inc. All rights reserved
+            Copyright @ 2025 Totally-Not-Apple Inc. All rights reserved
+            (probably).
           </p>
           <div className="flex">
             {footerLinks.map((link, i) => (
               <p key={link} className="font-semibold text-gray text-xs">
-                {link}{' '}
+                {link}{" "}
                 {i !== footerLinks.length - 1 && (
-                    <span className="mx-2"> | </span>
+                  <span className="mx-2"> | </span>
                 )}
               </p>
             ))}

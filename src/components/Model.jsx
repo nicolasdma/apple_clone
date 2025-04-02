@@ -12,7 +12,7 @@ import { animateWithGsapTimeline } from "../utils/animations";
 const Model = () => {
   const [size, setSize] = useState("small");
   const [model, setSetModel] = useState({
-    title: "iPhone 15 Pro in Natural Titanium",
+    title: "AiFone 15 Pro in Natural Titanium",
     color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
     img: yellowImg,
   });

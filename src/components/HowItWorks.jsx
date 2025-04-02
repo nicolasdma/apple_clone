@@ -36,11 +36,11 @@ const HowItWorks = () => {
         <div className="flex flex-col items-center">
           <h2 className="hiw-title">
             A17 Pro chip.
-            <br /> A monster win for gaming.
+            <br /> A monster win for gamers (and our wallets).
           </h2>
 
           <p className="hiw-subtitle">
-            It's here. The biggest redesign in the history of Apple GPUs.
+            Behold. The most dramatic GPU redesign in AiFone history.
           </p>
         </div>
 
@@ -68,31 +68,30 @@ const HowItWorks = () => {
           </div>
 
           <p className="text-gray font-semibold text-center mt-3">
-            Honkai: Star Rail
+            Honkai: Star Rail (now with 2% more shadows!)
           </p>
         </div>
         <div className="hiw-text-container">
           <div className="flex flex-1 justify-center flex-col">
             <p className="hiw-text g_fadeIn">
-              A17 Pro is an entirely new class of Iphone chip that delivers our{" "}
+              A17 Pro is an entirely new class of AiFone chip that delivers our{" "}
               <span className="text-white">
-                best graphic performance by far. {" "}
+                best graphic performance ever.{" "}
               </span>
             </p>
-          <p className="hiw-text g_fadeIn">
-            Mobile{" "}
-            <span className="text-white">
-              games will look and feel immersive {" "}
-            </span>
-            with incredible detail environments and characters
-          </p>
+            <p className="hiw-text g_fadeIn">
+              Mobile{" "}
+              <span className="text-white">
+                games will look and feel "immersive"{" "}
+              </span>
+              (for about 30 minutes, until your battery dies).
+            </p>
           </div>
-
 
           <div className="flex-1 flex justify-center flex-col g_fadeIn">
             <p className="hiw-text">New</p>
             <p className="hiw-bigtext">Pro-class GPU</p>
-            <p className="hiw-text">with 6 cores</p>
+            <p className="hiw-text">with 6 cores (because 5 wasn’t enough)</p>
           </div>
         </div>
       </div>

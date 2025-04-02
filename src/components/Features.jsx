@@ -9,16 +9,16 @@ const Features = () => {
 
   useGSAP(() => {
     // animateWithGsap('#exploreVideo');
-    gsap.to('#exploreVideo', {
+    gsap.to("#exploreVideo", {
       scrollTrigger: {
-          trigger: '#exploreVideo',
-          toggleActions: "play pause reverse restart",
-          start: '-10% bottom',
+        trigger: "#exploreVideo",
+        toggleActions: "play pause reverse restart",
+        start: "-10% bottom",
       },
       onComplete: () => {
-        videoRef.current.play()
-      }
-  });
+        videoRef.current.play();
+      },
+    });
 
     animateWithGsap("#features_title", { y: 0, opacity: 1 });
     animateWithGsap(
@@ -26,10 +26,12 @@ const Features = () => {
       { scale: 1, opacity: 1, ease: "power1" },
       { scrub: 5.5 }
     );
-    animateWithGsap(
-      ".g_text",
-      { y: 0, opacity: 1, ease: "power2.inOut", duration: 1 },
-    );
+    animateWithGsap(".g_text", {
+      y: 0,
+      opacity: 1,
+      ease: "power2.inOut",
+      duration: 1,
+    });
   }, []);
 
   return (
@@ -81,25 +83,26 @@ const Features = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="feature-text-container">
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    iPhone 15 pro is{" "}
+                    The AiFone 15 Pro is{" "}
                     <span className="text-white">
-                      the first iPhone to feature an aerospace-grade titanium
-                      design, {" "}
+                      the first AiFone to feature a space-grade titanium design,{" "}
                     </span>
-                    using the same alloy that spacecraft use for mission to Mars.
+                    using the same material NASA probably wishes they could
+                    afford.
                   </p>
                 </div>
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    Titanium has one of the best strength-to-weigh ratios of any metal, making these out {" "}
+                    Titanium has one of the best strength-to-weight ratios of
+                    any metal, making these{" "}
                     <span className="text-white">
-                      lightest Pro models ever. {" "}
+                      the lightest Pro models ever.{" "}
                     </span>
-                     You'll notice the difference the moment you pick one up.
+                    So light, you'll think your wallet lost some weight too.
                   </p>
                 </div>
               </div>

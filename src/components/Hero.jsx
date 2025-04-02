@@ -41,7 +41,7 @@ const Hero = () => {
     <section className="w-full nav-height bg-black position-relative">
       <div className="h-5/6 w-full flex-center flex-col">
         <p id="hero" className="hero-title">
-          iPhone 15 Pro
+        AiFone 15 Pro
         </p>
         <div className="md:w-10/12 w-9/12">
           <video
@@ -61,9 +61,9 @@ const Hero = () => {
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
         <a href="#highlight" className="btn">
-          Buy
+        Buy (Sell a kidney first)
         </a>
-        <p className="font-normal text-xl">From $199/month or $999</p>
+        <p className="font-normal text-xl">Starting at $199/month or your soul</p>
       </div>
     </section>
   );

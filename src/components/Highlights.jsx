@@ -13,7 +13,7 @@ const Highlights = () => {
       opacity: 1,
       y: 0,
       duration: 1,
-      stagger: '0.25'
+      stagger: "0.25",
     });
   }, []);
 
@@ -26,7 +26,7 @@ const Highlights = () => {
           </h1>
           <div className="flex flex-wrap items-end gap-5">
             <p className="link">
-              Watch the film
+              Watch the cinematic
               <img src={watchImg} alt="watch" className="ml-2" />
             </p>
             <p className="link">
