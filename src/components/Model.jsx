@@ -12,7 +12,7 @@ import { animateWithGsapTimeline } from "../utils/animations";
 const Model = () => {
   const [size, setSize] = useState("small");
   const [model, setSetModel] = useState({
-    title: "AiFone 15 Pro in Natural Titanium",
+    // title: "AiFone 15 Pro in Natural Titanium",
     color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
     img: yellowImg,
   });
@@ -39,10 +39,10 @@ const Model = () => {
       });
     }
     if (size === "small") {
-        animateWithGsapTimeline(tl, large, largeRotation, "#view2", "#view1", {
-          transform: "translateX(0)",
-          duration: 2,
-        });
+      animateWithGsapTimeline(tl, large, largeRotation, "#view2", "#view1", {
+        transform: "translateX(0)",
+        duration: 2,
+      });
     }
   }, [size]);
 
@@ -53,13 +53,13 @@ const Model = () => {
     });
   }, []);
   return (
-    <section className="common-padding">
+    <section>
       <div className="screen-max-width">
-        <h1 id="heading" className="section-heading">
+        {/* <h1 id="heading" className="section-heading">
           Take a closer look.
-        </h1>
+        </h1> */}
 
-        <div className="flex flex-col items-center mt-5">
+        <div className="flex flex-col items-center">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView
               index={1}
@@ -67,15 +67,6 @@ const Model = () => {
               gsapType="view1"
               controlRef={cameraControlSmall}
               setRotationState={setSmallRotation}
-              item={model}
-              size={size}
-            />
-            <ModelView
-              index={2}
-              groupRef={large}
-              gsapType="view2"
-              controlRef={cameraControlLarge}
-              setRotationState={setLargeRotation}
               item={model}
               size={size}
             />
@@ -98,7 +89,7 @@ const Model = () => {
         </div>
 
         <div className="mx-auto w-full">
-          <p className="text-sm font-light text-center mb-5">{model.title}</p>
+          {/* <p className="text-sm font-light text-center mb-5">{model.title}</p> */}
           <div className="flex-center">
             <ul className="color-container">
               {models.map((item, i) => (
@@ -110,21 +101,6 @@ const Model = () => {
                 />
               ))}
             </ul>
-            <button className="size-btn-container">
-              {sizes.map(({ label, value }) => (
-                <span
-                  key={label}
-                  className="size-btn"
-                  style={{
-                    backgroundColor: size === value ? "white" : "transparent",
-                    color: size === value ? "black" : "white",
-                  }}
-                  onClick={() => setSize(value)}
-                >
-                  {label}
-                </span>
-              ))}
-            </button>
           </div>
         </div>
       </div>

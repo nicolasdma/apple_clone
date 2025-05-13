@@ -12,13 +12,13 @@ const App = () => {
 
   return (
     <main className="bg-black">
-      <Navbar />
+      {/* <Navbar />
       <Hero />
-      <Highlights />
+      <Highlights /> */}
       <Model />
-      <Features />
+      {/* <Features />
       <HowItWorks />
-      <Footer />
+      <Footer /> */}
     </main>
   )
 }
